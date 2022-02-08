@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="TR">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sayfa açıklaması." />
+    <meta name="keywords" content="tags,virgülle,ayrılacak" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Test Sitesi - Ana Sayfa </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="flex-container">
+
+
+                <div><a href="index.html"> Ana Sayfa</a></div>
+
+                <div> <a href="contact.html">İletişim</a></div>
+
+                <div><a href="aboutus.html">Hakkımızda</a></div>
+
+
+
+            </div>
+        </nav>
+
+
+    </header>
+    <br>
+
+    <div class="container">
+        <form action="action_page.php">
+
+            <label for="fname">Adınız</label>
+            <input type="text" id="fname" name="firstname" placeholder="Adınızı yazınız...">
+
+            <label for="lname">Soyadınız</label>
+            <input type="text" id="lname" name="lastname" placeholder="Soyadınızı yazınız...">
+
+            <label for="country">Ülke</label>
+            <select id="country" name="country">
+            <option value="turkiye">Türkiye</option>
+            <option value="kktc">KKTC</option>
+            <option value="az">Azerbaycan</option>
+          </select>
+
+            <label for="subject">Konu</label>
+            <textarea id="subject" name="subject" placeholder="Bir şeyler yazın." style="height:200px"></textarea>
+
+            <input type="submit" value="Gönder">
+
+        </form>
+    </div>
+    <br>
+    <footer>
+        <div class="flex-container">
+            <div>
+                <ul> Tüm hakları saklıdır. (C) 2022 - Alper Gökçe ACAR </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

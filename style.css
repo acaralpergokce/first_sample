@@ -1,0 +1,103 @@
+body {
+    background-color: darkgray;
+}
+
+nav,
+ul {
+    list-style: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.flex-container>div {
+    background-color: darkorange;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    flex: auto;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: darkorange;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.column {
+    float: left;
+    width: 32%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    border-style: solid;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
